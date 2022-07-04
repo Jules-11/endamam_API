@@ -4,7 +4,7 @@ const Recipe = ({ item }) => {
   const nutrientsArr = ["CA", "CHOLE", "FAT", "FIBTG", "SUGAR", "NA", "FE"];
   return (
     <div className="card" style={{ maxWidth: "350px", marginTop: "40px" }}>
-        <div style={{paddingTop: "20px"}}>
+        <div style={{paddingTop: "20px", paddingLeft: "20px"}}>
         <h2 className="card-title">{item.recipe.label}</h2>
         </div>
       <img
