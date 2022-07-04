@@ -3,7 +3,8 @@ import React from "react";
 const Recipe = ({ item }) => {
   const nutrientsArr = ["CA", "CHOLE", "FAT", "FIBTG", "SUGAR", "NA", "FE"];
   return (
-    <div className="card" style={{ maxWidth: "350px", marginTop: "40px" }}>
+    <div className="col-6 offset-3">
+    <div className="card" style={{marginTop: "40px" }}>
         <div style={{paddingTop: "20px", paddingLeft: "20px"}}>
         <h2 className="card-title">{item.recipe.label}</h2>
         </div>
@@ -46,7 +47,7 @@ const Recipe = ({ item }) => {
             
           ))}
           
-        <div className="card-body d-flex justify-content-center">
+        <div className="card-body d-flex justify-content-around">
           <button type="button" className="btn btn-dark">
             <a href={item.recipe.url} target="_blank" className="card-link text-white">
               Full Recipe!
@@ -59,6 +60,7 @@ const Recipe = ({ item }) => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };
