@@ -11,7 +11,7 @@ const Recipe = ({ item }) => {
       <img
         src={item.recipe.image}
         alt={item.recipe.label}
-        style={{ padding: "20px" }}
+        style={{ padding: "10px 60px" }}
       />
       <div className="card-body">
         
