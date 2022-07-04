@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     fetch(
-      "https://api.edamam.com/api/recipes/v2?type=public&app_id=e5010e00&app_key=0326e037783040d1e8513857ee63d982&q=eggplant"
+      "https://api.edamam.com/api/recipes/v2?type=public&app_id=e5010e00&app_key=0326e037783040d1e8513857ee63d982&q=chicken"
     )
       .then((response) => response.json())
       .then(
